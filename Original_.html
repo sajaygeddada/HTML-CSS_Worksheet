@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        #mindtreehead{
+            background-color: blue;
+        }
+        #stdname{
+            color: black;
+        }
+        #stdname:focus {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--DAY1-->
+    <!--Day 1.1 - Table-->
+    <table>
+        <tr>
+            <td>Employee id</td>
+            <td>Employee name</td>
+            <td>Employee city</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Roshan</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Roshni</td>
+            <td>Bangalore</td>
+        </tr>
+    </table>
+
+    <!--Day1.2 - Description List -->
+    <dl>
+        <dt>Top Employee</dt>
+        <dd>Person who performs excellently</dd>
+
+        <dt>Average Employee</dt>
+        <dd>Person who just meets the expectations</dd>
+        
+        <dt>Poor Employee</dt>
+        <dd>Person who doesn't perform</dd>
+    </dl>
+
+    <!--Day1.3 - Links -->
+    <a href="https://www.mindtree.com/"><img src="img1.jpg" alt="Link 1" style="width: 359px; height: 205px;"></a>
+    <br>
+    <a href="#">Link2</a>
+
+    <!--Day1.4 - Form -->
+    <form action="">
+        <!--First Name -->
+        <label for="Fname">First Name</label>
+        <input type="text"><br>
+        <!--Last Name -->
+        <label for="Lname">Last Name</label>
+        <input type="text"><br>
+        <!--Skills Radio -->
+        <label for="skill">Skill:</label>
+        <select name="skill" id="skill">
+            <option value="vue">Vue JS</option>
+            <option value="react">React JS</option>
+            <option value="angular">Angular JS</option>
+        </select>
+        <!--Location Check -->
+        <br>
+        <label for="Loca">Preferred Location:</label>
+        <br>
+        <input type="checkbox">Bombay
+        <input type="checkbox">Delhi
+        <input type="checkbox">Kolkata
+        <input type="checkbox">Chennai
+        <br>
+        <!--Button-->
+        <input type="button" value="Submit">
+    </form>
+
+    <!--DAY2-->
+    <figure>
+        <img src="./pictures/Wonderful_Nature_Beauty.jpg" alt="Picture not found" style="width: 300px; height:200px;">
+        <figcaption>Wonderful picture</figcaption>
+    </figure>
+
+    <!--DAY2.3-->
+    <h1>Form</h1>
+    <form action="">
+        <!-- Name -->
+        <label for="Fullname">Name</label><br>
+        <input type="text" maxlength="20"><br>
+        <!--Email -->
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" maxlength="20"><br>
+        <!-- City -->
+        <label for="city">City</label><br>
+        <input type="text" maxlength="20"><br>
+        <!--Button-->
+        <input type="button" value="Submit">
+    </form>
+    
+    <!--DAY2.4-->
+    <form action="">
+       
+        <input type="radio" id="air" name="airtrans" value="aero">
+        <label for="air">Aeroplane</label><br>
+        <input type="radio" id="water" name="watertrans" value="ship">
+        <label for="water">Ship</label><br>
+        <input type="radio" id="land" name="landtrans" value="car">
+        <label for="land">Car</label>
+        <!--Button-->
+        <br><input type="button" value="Submit">
+    </form>
+
+
+    <!--DAY3-->
+    <h1>Day 3</h1>
+    <canvas id="myCanvas" width="600px" height="400px" style="border:1px solid green;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Beautiful Garden",170,370);
+    </script>
+
+    <!--DAY3.1-->
+    <h1>Day 3.1</h1>
+    <h1 id="mindtreehead" style="color: yellow;">Welcome to Mindtree Family</h1>
+
+    <!--DAY3.2-->
+    <h1>Form</h1>
+    <form action="">
+        <!-- Name -->
+        <label for="Fullname">Student Name</label><br>
+        <input type="text" id="stdname"><br>
+        
+        <!--Button-->
+        <input type="button" value="Submit">
+    </form>
+</body>
+</html>

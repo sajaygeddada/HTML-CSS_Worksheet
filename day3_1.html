@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        #mindtreehead{
+            background-color: blue;
+        }
+        #stdname{
+            color: black;
+        }
+        #stdname:focus {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--DAY3-->
+
+    <h2 style="padding: 0px; margin:1% 0%;">Day 3</h2>
+    <h4 style="padding: 0px; margin:1% 0%;">Task 1 - Canvas 400px:600px</h4><br>
+
+    <canvas id="myCanvas" width="600px" height="400px" style="border:1px solid green;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Beautiful Garden",170,370);
+    </script>
+
+</body>
+</html>

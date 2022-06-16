@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        td{
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <!--DAY1-->
+    <h2 style="padding: 0px; margin:1% 0%;">Day 1</h2>
+    <h4 style="padding: 0px; margin:1% 0%;">Task 4 - Simple user form</h4>
+    <!--Day1.4 - Form -->
+    <form action="">
+        <table>
+            <tr><!--First Name -->
+                <td><label for="Fname">First Name</label></td>
+                <td><input type="text"><br></td>
+            </tr>
+            <tr><!--Last Name -->
+                <td> <label for="Lname">Last Name</label></td>
+                <td><input type="text"><br></td>
+            </tr>
+            <tr><!--Skills Radio -->
+                <td>  <label for="skill">Skill:</label></td>
+                <td><select name="skill" id="skill">
+                        <option value="vue">Vue JS</option>
+                        <option value="react">React JS</option>
+                        <option value="angular">Angular JS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><!--Location Check -->
+                <td> <label for="Loca">Preferred Location:</label></td>
+                <td>
+                        <input type="checkbox">Bombay
+                        <input type="checkbox">Delhi
+                        <input type="checkbox">Kolkata
+                        <input type="checkbox">Chennai
+                </td>
+            </tr>
+            <tr><!--Button-->
+                <td><input type="button" value="Submit"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
